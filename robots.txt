@@ -1,0 +1,12 @@
+# Artado Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /core/
+Disallow: /includes/
+
+# Sitemap
+Sitemap: https://artado.xyz/sitemap.php
+
+# Crawl-delay
+Crawl-delay: 1

@@ -1,0 +1,33 @@
+-- Artado Database Schema Example
+-- This is an example file. Copy and modify as needed.
+
+CREATE DATABASE IF NOT EXISTS `artado_db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `artado_db`;
+
+-- Users Table (for Admin Panel)
+CREATE TABLE IF NOT EXISTS `users` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `username` VARCHAR(50) NOT NULL UNIQUE,
+    `password` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(100) NOT NULL UNIQUE,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+-- Supporters Table
+CREATE TABLE IF NOT EXISTS `supporters` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `name` VARCHAR(100) NOT NULL,
+    `slug` VARCHAR(100) NOT NULL UNIQUE,
+    `image_url` VARCHAR(255),
+    `github_link` VARCHAR(255),
+    `description` TEXT,
+    `contributions` TEXT,
+    `type` ENUM('supporter', 'developer', 'plugin', 'theme', 'sponsor') DEFAULT 'supporter',
+    `order_priority` INT DEFAULT 0,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+-- Create default admin user
+-- Password: admin123 (change this in production!)
+INSERT IGNORE INTO `users` (`username`, `password`, `email`) 
+VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin@artado.xyz');
