@@ -106,7 +106,7 @@ Bu proje açık kaynak kodludur ve özgür yazılım felsefesiyle geliştirilmi�
 
 ## 👥 Destekçiler
 
-Projeye katkıda bulunan tüm destekçilerimize teşekkürler! Detaylar için [katki.php](katki.php) sayfasını ziyaret edin.
+Projeye katkıda bulunan tüm destekçilerimize teşekkürler! Detaylar için [katki.php](https://artado.xyz/katki.php) sayfasını ziyaret edin.
 
 ## 📧 İletişim
 
@@ -115,3 +115,4 @@ Sorularınız için: [sxi@artadosearch.com](mailto:sxi@artadosearch.com)
 ---
 
 **Artado** - Tutarlı, sade ve özgür yazılım.
+
