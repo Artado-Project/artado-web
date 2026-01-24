@@ -105,8 +105,12 @@
         </div>
         <a href="<?php echo BASE_URL; ?>"><i class="fas fa-home"></i> Ana Sayfa</a>
         <a href="<?php echo BASE_URL; ?>katki.php"><i class="fas fa-heart"></i> Destekçilerimiz</a>
-        <a href="https://artadosearch.com/manifesto"><i class="fas fa-book"></i> Dökümentasyon</a>
-        <a href="https://artadosearch.com/manifesto"><i class="fas fa-info-circle"></i> Hakkımızda</a>
-        <a href="#"><i class="fas fa-code"></i> Geliştiriciler</a>
-        <a href="mailto:support@artadosearch.com"><i class="fas fa-envelope"></i> İletişim</a>
+        <a href="https://docs.artado.xyz"><i class="fas fa-book"></i> Dökümentasyon</a>
+        <a href="https://forum.artado.xyz"><i class="fas fa-code"></i> Forum</a>
+		<a href="https://artado.xyz/blog"><i class="fas fa-blog"></i> Blog</a>
+        <a href="mailto:arda@artadosearch.com"><i class="fas fa-envelope"></i> İletişim - Ardatdev</a>
+		<a href="mailto:sxi@artadosearch.com"><i class="fas fa-envelope"></i> İletişim - Sxinar</a>
+		        <a href="https://artado.xyz/hakkimizda"><i class="fas fa-info-circle"></i> Hakkımızda</a>
+
+
     </div>
