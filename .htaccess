@@ -1,0 +1,18 @@
+# BEGIN LSCACHE
+# END LSCACHE
+# BEGIN NON_LSCACHE
+# END NON_LSCACHE
+RewriteEngine On
+
+# Redirect index.php to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ / [R=301,L]
+
+# Clean CSS/JS versioning
+# (handled by PHP time() in our implementation)
+
+# Supporter Profiles
+RewriteRule ^profil/([a-z0-9-]+)$ profile.php?slug=$1 [L,QSA]
+
+# Katki page
+RewriteRule ^katki$ katki.php [L]
